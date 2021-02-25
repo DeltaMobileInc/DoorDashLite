@@ -28,6 +28,7 @@ class RestaurantViewModel(application: Application): AndroidViewModel(applicatio
     }
 
     fun getRestaurantsList(offset: Int){
+        //git test
         viewModelScope.launch {
             restaurantRepo.getRestaurantsList(offset)?.let {
                 _restLiveData.postValue(
